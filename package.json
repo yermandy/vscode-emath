@@ -1,6 +1,7 @@
 {
   "name": "emath",
   "displayName": "emath",
+  "publisher": "yermandy",
   "description": "Visual Studio Code extension for rendering math equations in editor",
   "version": "0.0.1",
   "license": "SEE LICENSE IN LICENSE.txt",
