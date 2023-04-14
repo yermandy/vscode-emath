@@ -3,8 +3,13 @@
   "displayName": "emath",
   "description": "Visual Studio Code extension for rendering math equations in editor",
   "version": "0.0.1",
+  "license": "SEE LICENSE IN LICENSE.txt",
   "engines": {
     "vscode": "^1.77.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yermandy/vscode-emath"
   },
   "categories": [
     "Other"
@@ -21,6 +26,7 @@
       }
     ]
   },
+
   "scripts": {
     "vscode:prepublish": "yarn run compile",
     "compile": "tsc -p ./",
