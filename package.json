@@ -5,6 +5,8 @@
   "description": "Visual Studio Code extension for rendering math equations in editor",
   "version": "0.0.1",
   "license": "SEE LICENSE IN LICENSE.txt",
+  "keywords": ["math", "equations", "latex", "tex", "katex"],
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.77.0"
   },
