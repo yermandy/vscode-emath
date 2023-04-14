@@ -3,7 +3,7 @@
   "displayName": "emath",
   "publisher": "yermandy",
   "description": "Visual Studio Code extension for rendering math equations in editor",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "SEE LICENSE IN LICENSE.txt",
   "keywords": [
     "math",
@@ -49,5 +49,8 @@
     "mocha": "^10.2.0",
     "texsvg": "^2.0.2",
     "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "texsvg": "^2.0.2"
   }
 }
