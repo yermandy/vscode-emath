@@ -22,12 +22,15 @@ export function activate(context: vscode.ExtensionContext) {
 	// creates the images folder
 	fs.mkdirSync(imagesRoot);
 
-	const disposable = vscode.languages.registerHoverProvider("python", {
+	const disposable = vscode.languages.registerHoverProvider(["python", "cpp"], {
 		async provideHover(document, position, token) {
 			var text = document.lineAt(position).text;
 
 			// if the line doesn't start with a comment symbol return null
-			if (!text.trim().startsWith('#')) {
+			if (!text.trim().startsWith('#') && document.languageId === "python") {
+				return null;
+			}
+			if (!text.trim().startsWith('//') && document.languageId === "cpp") {
 				return null;
 			}
 			
